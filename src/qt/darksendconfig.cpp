@@ -36,13 +36,13 @@ void DarksendConfig::setModel(WalletModel *model)
 
 void DarksendConfig::clickBasic()
 {
-    configure(true, 1000, 2);
+    configure(true, 5000, 2);
 
     QString strAmount(BitcoinUnits::formatWithUnit(
-        model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
+        model->getOptionsModel()->getDisplayUnit(), 5000 * COIN));
     QMessageBox::information(this, tr("PrivateSend Configuration"),
         tr(
-            "PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Dash's configuration screen."
+            "PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Fxc's configuration screen."
         ).arg(strAmount)
     );
 
@@ -51,13 +51,13 @@ void DarksendConfig::clickBasic()
 
 void DarksendConfig::clickHigh()
 {
-    configure(true, 1000, 8);
+    configure(true, 5000, 8);
 
     QString strAmount(BitcoinUnits::formatWithUnit(
-        model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
+        model->getOptionsModel()->getDisplayUnit(), 5000 * COIN));
     QMessageBox::information(this, tr("PrivateSend Configuration"),
         tr(
-            "PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Dash's configuration screen."
+            "PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Fxc's configuration screen."
         ).arg(strAmount)
     );
 
@@ -66,13 +66,13 @@ void DarksendConfig::clickHigh()
 
 void DarksendConfig::clickMax()
 {
-    configure(true, 1000, 16);
+    configure(true, 5000, 16);
 
     QString strAmount(BitcoinUnits::formatWithUnit(
-        model->getOptionsModel()->getDisplayUnit(), 1000 * COIN));
+        model->getOptionsModel()->getDisplayUnit(), 5000 * COIN));
     QMessageBox::information(this, tr("PrivateSend Configuration"),
         tr(
-            "PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Dash's configuration screen."
+            "PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Fxc's configuration screen."
         ).arg(strAmount)
     );
 

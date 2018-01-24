@@ -1,0 +1,22 @@
+[Unit]
+Description=Fxc's distributed currency daemon
+After=network.target
+
+[Service]
+User=fxccore
+Group=fxccore
+
+Type=forking
+PIDFile=/var/lib/fxcd/fxcd.pid
+ExecStart=/usr/bin/fxcd -daemon -pid=/var/lib/fxcd/fxcd.pid \
+-conf=/etc/fxccore/fxc.conf -datadir=/var/lib/fxcd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

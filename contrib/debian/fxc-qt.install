@@ -1,0 +1,6 @@
+usr/local/bin/fxc-qt usr/bin
+share/pixmaps/fxc32.xpm usr/share/pixmaps
+share/pixmaps/fxc16.xpm usr/share/pixmaps
+share/pixmaps/fxc128.png usr/share/pixmaps
+debian/fxc-qt.desktop usr/share/applications
+debian/fxc-qt.protocol usr/share/kde4/services/

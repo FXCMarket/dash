@@ -1,10 +1,10 @@
-// Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2014-2017 The Fxc developers
 
 #include "governance-validators.h"
 #include "univalue.h"
 #include "utilstrencodings.h"
 
-#include "test/test_dash.h"
+#include "test/test_fxc.h"
 
 #include <boost/test/unit_test.hpp>
 
