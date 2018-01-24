@@ -1,4 +1,5 @@
-// Copyright (c) 2014-2017 The Fxc developers
+// Copyright (c) 2014-2018 The Dash developers
+// Copyright (c) 2018-2018 The Fxc developers
 
 #include "cachemap.h"
 
